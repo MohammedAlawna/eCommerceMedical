@@ -58,3 +58,62 @@ header .icons a {
 header .icons a:hover {
   color: royalblue;
 }
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: rgb(77, 77, 77);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+/*Responsiveness*/
+@media (max-width: 991px) {
+  html {
+    font-size: 54%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(211, 201, 201);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.15);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 51%;
+  }
+}
