@@ -21,6 +21,25 @@ html {
   overflow-x: hidden;
 }
 
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background-color: #ec3d51;
+  color: #fff;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: royalblue;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -73,6 +92,37 @@ header .fa-bars {
   display: none;
 }
 
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url("/Image/bg.jpg");
+  background-position: center;
+}
+
+.home .content {
+  max-width: 50rem;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+  color: #ec3d51;
+}
+
+.home .content span {
+  font-size: 3.5rem;
+  color: royalblue;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  color: #999;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
 /*Responsiveness*/
 @media (max-width: 991px) {
   html {
@@ -81,6 +131,14 @@ header .fa-bars {
 
   header {
     padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .home {
+    background-position: left;
   }
 }
 
@@ -109,6 +167,14 @@ header .fa-bars {
     background-color: #fff;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     display: block;
+  }
+
+  .home .content h3 {
+    font-size: 5rem;
+  }
+
+  .home .content span {
+    font-size: 2.5rem;
   }
 }
 
