@@ -25,6 +25,9 @@
 
 # Demo
 - Wide Screen
+
 https://user-images.githubusercontent.com/88289155/175808733-193ad337-f7e2-4f6b-82f3-a9591c56ab4e.mp4
+
 - Phone/Tables Responsive
+
 https://user-images.githubusercontent.com/88289155/175808784-2bb8adff-58fb-4998-9200-72873fe0696d.mp4
