@@ -188,6 +188,40 @@ header .fa-bars {
   line-height: 1.5;
 }
 
+.icons-container {
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.icons-container .icons {
+  background-color: white;
+  border: 1rem solid #ec3d51;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.icons-container .icons img {
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.icons-container .icons h3 {
+  color: #333;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.icons-container .icons span {
+  color: #555;
+  font-size: 1.3rem;
+}
+
 /*Responsiveness*/
 @media (max-width: 991px) {
   html {
@@ -240,6 +274,14 @@ header .fa-bars {
 
   .home .content span {
     font-size: 2.5rem;
+  }
+
+  .icons-container .icons h3 {
+    font-size: 2rem;
+  }
+
+  .icons-container .icons span {
+    font-size: 1.7rem;
   }
 }
 
